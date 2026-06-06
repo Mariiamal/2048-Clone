@@ -39,7 +39,7 @@ namespace _2048_clone {
 
             gridValue += (aiGame.AllEmptyTiles().Count) * Configs.MOVE_EVALUATION_COEFF; 
             gridValue += (aiGame.MergesCounter) * (2 * Configs.MOVE_EVALUATION_COEFF);
-            gridValue += aiGame.Grid.Cast<int>().Max() * 2;  // Cast<int> converts array into IEnumarable<int>, so we can take Max()
+            gridValue += aiGame.Grid.Cast<int>().Max() * 2;  // Cast<int> converts array into IEnumerable<int>, so we can take Max()
             return gridValue; 
         }
     }
